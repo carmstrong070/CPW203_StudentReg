@@ -2,3 +2,24 @@
     color: red;
     font-style: italic;
 }
+
+header{
+    text-align: center;
+    background-color: #502d7f;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    border: .2em solid #97d700;
+    margin: 0px 10% 1.5em;
+}
+
+main > label{
+    margin-right: .5em;
+    display: inline-block;
+    width: 12%;
+    text-align: right;
+}
+
+main > input[type=text]{
+    padding: .4em;
+    border-radius: .3em;
+}

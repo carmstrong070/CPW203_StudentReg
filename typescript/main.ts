@@ -34,5 +34,8 @@ function getStudent(): Student{
 }
 
 function displayStudent(stu: Student){
-    alert(stu.firstName + ", " + stu.lastName)
+    
+
+    /*let list = document.querySelector("#roster > ul")
+    list.appendChild(studentLI)*/
 }
