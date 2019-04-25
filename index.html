@@ -7,8 +7,11 @@
     <title>Register a student account | CPTC</title>
     <meta name="description" content="New students at CPTC register here.">
     <meta name="CPTC Registration, New CPTC Student Registration, Technical College, Register">
+    
     <link rel="stylesheet" href="css/site.css">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+    <script src="scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -17,20 +20,26 @@
     
     <main>
         <label for="txt_firstName">First Name:</label>
-        <input type="text" id="txt_firstName">
-        <span class="required">*</span>
+        <input type="text" id="txt_firstName" data-required>
+        <span class="required" data-msg="First Name is required.">*</span>
         </br></br>
 
         <label for="txt_lastName">Last Name:</label>
-        <input type="text" id="txt_lastName">
+        <input type="text" id="txt_lastName" data-required>
+        <span class="required" data-msg="Last Name is required.">*</span>
+        </br></br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob">
         <span class="required">*</span>
         </br></br>
 
-        <label for="txt_dob">Date of Birth:</label>
-        <input type="text" id="txt_dob">
-        <span class="required">*</span>
-        </br></br>
+        <button type="button">Register</button>
+
     </main>
+    <div id="roster">
+        <ul></ul>
+    </div>
 
 
 </body>
